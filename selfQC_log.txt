@@ -1,0 +1,85 @@
+> #check if your own calculation is similar to Bo Li's Fmat
+> cor.test(as.numeric(subwhole[tmp.ss,2]),Fmat0.p[tmp.ss,'B_cell'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 2]) and Fmat0.p[tmp.ss, "B_cell"]
+t = 77.001, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9523359 0.9661245
+sample estimates:
+      cor 
+0.9598053 
+
+> write.csv(Fmat0.p, file = "QCed_infiltration_score.csv")
+> #CD4
+> cor.test(as.numeric(subwhole[tmp.ss,3]),Fmat0.p[tmp.ss,'T_cell.CD4'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 3]) and Fmat0.p[tmp.ss, "T_cell.CD4"]
+t = 54.737, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9111323 0.9364526
+sample estimates:
+    cor 
+0.92481 
+
+> #CD8
+> cor.test(as.numeric(subwhole[tmp.ss,4]),Fmat0.p[tmp.ss,'T_cell.CD8'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 4]) and Fmat0.p[tmp.ss, "T_cell.CD8"]
+t = 37.686, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.8337417 0.8797245
+sample estimates:
+      cor 
+0.8584484 
+
+> #Neutrophil
+> cor.test(as.numeric(subwhole[tmp.ss,5]),Fmat0.p[tmp.ss,'Neutrophil'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 5]) and Fmat0.p[tmp.ss, "Neutrophil"]
+t = 57.502, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9185836 0.9418455
+sample estimates:
+      cor 
+0.9311558 
+
+> #Macrophage
+> cor.test(as.numeric(subwhole[tmp.ss,6]),Fmat0.p[tmp.ss,'Macrophage'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 6]) and Fmat0.p[tmp.ss, "Macrophage"]
+t = 59.914, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9243691 0.9460245
+sample estimates:
+      cor 
+0.9360777 
+
+> #Dendritic cells
+> cor.test(as.numeric(subwhole[tmp.ss,7]),Fmat0.p[tmp.ss,'DC'],use='complete.obs')
+
+	Pearson's product-moment correlation
+
+data:  as.numeric(subwhole[tmp.ss, 7]) and Fmat0.p[tmp.ss, "DC"]
+t = 63.133, df = 507, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9312051 0.9509530
+sample estimates:
+      cor 
+0.9418873 
+
