@@ -29,7 +29,7 @@ names(signature.genes)=c('B_cell','T_cell.CD4','T_cell.CD8','Neutrophil','Macrop
 head(dd[,1:5])
 
 
-# RSEM data is donwloaded from GDC Firehose
+# RSEM data is donwloaded from GDC Firehose firebrowse.org/
 # Download the "illuminahiseq_rnaseqv2-RSEM_genes  (MD5)" file under mRNASeq
 # File downloaded should have a name of (gdac.broadinstitute.org_HNSC.Merge_rnaseqv2__illuminahiseq_rnaseqv2__unc_edu__Level_3__RSEM_genes__data.Level_3.2016012800.0.0.tar.gz)
 load("/hnscnn.RData") # Load RSEM data
