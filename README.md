@@ -1,2 +1,2 @@
-# Immune
-Immune cell infiltration proportion in cancer solid tumor using TCGA RNASeq data
+# TIMER scripts
+Copied from Bo Li et a, 2016 https://pubmed.ncbi.nlm.nih.gov/27549193/
